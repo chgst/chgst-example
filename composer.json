@@ -1,0 +1,37 @@
+{
+    "name": "chgst/chgst-example",
+    "type": "project",
+    "require": {
+        "chgst/common":"@dev",
+        "chgst/chgst":"@dev",
+        "chgst/persistence-doctrine":"@dev",
+        "doctrine/orm": "^2.6"
+    },
+    "autoload": {
+        "psr-4": {
+            "": "src/"
+        }
+    },
+    "autoload-dev": {
+        "psr-4": {
+            "Tests\\": "spec/"
+        }
+    },
+    "repositories": [
+        {
+            "type": "vcs",
+            "url":  "git@github.com:chgst/common.git"
+        },
+        {
+            "type": "vcs",
+            "url":  "git@github.com:chgst/chgst.git"
+        },
+        {
+            "type": "vcs",
+            "url":  "git@github.com:chgst/persistence-doctrine.git"
+        }
+    ],
+    "require-dev": {
+        "phpspec/phpspec": "^5.0"
+    }
+}

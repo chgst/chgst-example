@@ -1,0 +1,21 @@
+DefaultEvent:
+
+  type: entity
+
+  table: event_stream
+
+  id:
+    id:
+      type: integer
+      generator:
+        strategy: AUTO
+
+  fields:
+    name:
+      type: string
+    aggregateId:
+      type: string
+    aggregateType:
+      type: string
+    payload:
+      type: string

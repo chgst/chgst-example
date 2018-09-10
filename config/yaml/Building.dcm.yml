@@ -1,0 +1,12 @@
+Building:
+
+  type: entity
+
+  id:
+    id:
+      type: string
+      strategy: none
+
+  fields:
+    people:
+      type: string
